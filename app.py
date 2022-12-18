@@ -1,1 +1,0 @@
-print ('Fala pessoal, tudo beleza?')
