@@ -4,7 +4,7 @@ pipeline {
   stages {
     stage('Checkout') {
       steps {
-        git branch: 'aula_16', url: 'https://github.com/bcalvessilva/jenkinspipelinepython.git'
+        git branch: 'aula_15', url: 'https://github.com/bcalvessilva/jenkinspipelinepython.git'
       }
     }
     stage('Run') {
