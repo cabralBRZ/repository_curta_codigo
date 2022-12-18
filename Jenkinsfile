@@ -9,7 +9,8 @@ pipeline {
     }
     stage('Run') {
       steps {
-        sh 'python3 app.py'
+        sh 'python3 -m pip3 install -r requirements.txt'
+        sh 'python3 manage.py runserver 0.0.0.0:8000 &'
       }
     }
   }
