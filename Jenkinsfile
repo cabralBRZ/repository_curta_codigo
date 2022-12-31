@@ -14,7 +14,7 @@ pipeline {
 	    sh '. venv/bin/activate'
 	    sh 'pip3.10 install Django'
 	    sh 'pwd'
-        sh 'nohup python3.10 manage.py runserver 0.0.0.0:8000'
+        sh 'nohup python3.10 manage.py runserver 0.0.0.0:8000 > output.txt&'
       }
     }
   }
