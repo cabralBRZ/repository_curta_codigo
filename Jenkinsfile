@@ -14,7 +14,7 @@ pipeline {
 	    sh '. venv/bin/activate'
 	    sh 'pip3.10 install Django'
 	    sh 'pwd'
-        sh 'BUILD_ID=dontKillMe nohup python3.10 manage.py runserver 0.0.0.0:8000 > output.txt&'
+        sh 'JENKINS_NODE_COOKIE=dontKillMe nohup python3.10 manage.py runserver 0.0.0.0:8000 > output.txt&'
       }
     }
   }
