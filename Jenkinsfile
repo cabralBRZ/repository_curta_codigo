@@ -1,10 +1,10 @@
 pipeline {
-  agent { label 'jenkins-slave' }
+  agent { label 'jenkins-slave-pf' }
  
   stages {
     stage('Checkout') {
       steps {
-        git branch: 'aula_16', url: 'https://github.com/bcalvessilva/jenkinspipelinepython.git'
+        git branch: 'aula_16', url: 'https://github.com/cabralBRZ/jenkinspipelinepython.git'
       }
     }
     stage('Run') {
