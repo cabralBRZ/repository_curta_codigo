@@ -1,5 +1,5 @@
 pipeline {
-  agent { label 'mestre' }
+  agent { label 'jenkins-slave-pf' }
  
   stages {
     stage('Checkout') {
