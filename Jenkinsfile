@@ -5,12 +5,7 @@ pipeline {
     stage('Checkout') {
       steps {
 	      dir("aula_pf") {
-                    git(
-                        url: "https://github.com/cabralBRZ/jenkinspipelinepython-aula_15_2.git",
-                        branch: "aula_pf",
-                        changelog: true,
-                        poll: true
-                    )
+                    git branch: 'aula_pf', url: 'https://github.com/cabralBRZ/jenkinspipelinepython-aula_15_2.git'
                 }
       }
     }
